@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@types/jquery": "^3.3.31",
+    "@types/node": "^12.12.14",
     "jquery": "^3.4.1",
     "rxjs": "^6.5.3"
   }

@@ -1,0 +1,17 @@
+body {
+  font-family: sans-serif;
+}
+
+
+.log-msg {
+  margin: 2px;
+  padding: 2px;
+}
+
+.log-msg.log {
+  background-color: rgb(176, 188, 206)
+}
+.log-msg.title {
+  font-weight: bold;
+  background-color: rgb(82, 185, 122)
+}
