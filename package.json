@@ -3,6 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "rxjs": "^6.5.2"
+    "@types/jquery": "^3.3.31",
+    "jquery": "^3.4.1",
+    "rxjs": "^6.5.3"
   }
 }
