@@ -1,7 +1,7 @@
 import {log, insertButton} from './utils'
 import {Subject} from 'rxjs';
 import { withLatestFrom } from 'rxjs/operators';
-log('startWith', 'title');
+log('withLatestFrom', 'title');
 
 let aCounter = 0;
 let bCounter = 0;
