@@ -3,11 +3,11 @@ import {Subject} from 'rxjs';
 import {tap, map, switchMap, concatMap, mergeMap} from 'rxjs/operators';
 
 
+///////////////////////// SETUP /////////////////////////
 const subjectA = new Subject<number>();
 const subjectB = new Subject<number>();
 let aCounter = 0;
 let bCounter = 0;
-
 
 insertButton('Fire A', () => {
   subjectA.next(++aCounter);
@@ -30,6 +30,7 @@ logMergeMap('mergeMap', 'title');
 
 arrangeLogSectionVertical();
 
+///////////////////////// DEMO /////////////////////////
 subjectA.pipe(
   tap(i => logSwitchMap('A ' + i)),
   switchMap( ia => subjectB.pipe(
