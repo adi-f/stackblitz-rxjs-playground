@@ -10,7 +10,15 @@ function logTo(message: string, selector: string, type: string = 'log', ) {
 }
 
 export function insertListLink(text: string, toExecute: () => void) {
-  $(`<li><a href="javascript:;"></a></li>`).appendTo('.play-links').find('a').text(text).on('click', toExecute);
+  $(`<li><a href="javascript:;"></a></li>`)
+    .appendTo('.play-links')
+    .find('a')
+    .text(text)
+    .on('click', () => {
+      toExecute();
+      $('.play-links').children().remove();
+      insertListLink('go back', () => location.reload());
+    });
 }
 
 export function insertButton(text: string, toExecute: () => void|string|number) {
