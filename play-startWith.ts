@@ -13,6 +13,4 @@ insertButton('say hello', () => {
 subject
   .pipe(startWith('Hello'))
   .subscribe(message => log(message));
-
-
-
+  

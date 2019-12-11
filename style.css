@@ -15,3 +15,8 @@ body {
   font-weight: bold;
   background-color: rgb(82, 185, 122)
 }
+.log-section {
+  border: 1px solid green;
+  min-height: 1em;
+  margin: 0.5em 0;
+}
