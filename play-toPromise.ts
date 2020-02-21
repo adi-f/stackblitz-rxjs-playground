@@ -6,12 +6,12 @@ log('toPromise', 'title');
 const subject = new ReplaySubject<string>();
 let count = 0;
 
-insertButton('.toPrimise()', () => {
-  subject.toPromise().then(message => log(message));
+insertButton('.toPromise()', () => {
+  subject.toPromise().then(message => log(message, 'log1'));
 });
 
 insertButton('.subscribe()', () => {
-  subject.subscribe(message => log(message));
+  subject.subscribe(message => log(message, 'log2'));
 });
 
 insertButton('+1', () => {
@@ -20,5 +20,5 @@ insertButton('+1', () => {
 });
 
 insertButton('complete', () => {
-  subject.next('complete');
+  subject.complete();
 });

@@ -2,15 +2,11 @@ body {
   font-family: sans-serif;
 }
 
-
 .log-msg {
   margin: 2px;
   padding: 2px;
 }
 
-.log-msg.log {
-  background-color: rgb(176, 188, 206)
-}
 .log-msg.title {
   font-weight: bold;
   background-color: rgb(82, 185, 122)
@@ -19,4 +15,24 @@ body {
   border: 1px solid green;
   min-height: 1em;
   margin: 0.5em 0;
+}
+
+.log-msg.log {
+  background-color: rgb(176, 188, 206)
+}
+
+.log-msg.log1 {
+  background-color: rgb(115, 255, 162)
+}
+.log-msg.log2 {
+  background-color: rgb(115, 171, 255)
+}
+.log-msg.log3 {
+  background-color: rgb(255, 190, 115)
+}
+.log-msg.log3 {
+  background-color: rgb(255, 115, 232)
+}
+.log-msg.log3 {
+  background-color: rgb(115, 255, 255)
 }
