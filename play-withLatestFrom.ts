@@ -29,6 +29,4 @@ insertButton('Fire C', () => {
 subjectA
   .pipe(withLatestFrom(subjectB, subjectC))
   .subscribe(([a, b, c]) => log(`A: ${a}, B: ${b}, C: ${c}`));
-
-
-
+  
