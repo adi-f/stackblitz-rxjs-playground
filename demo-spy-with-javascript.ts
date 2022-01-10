@@ -35,7 +35,7 @@ insertButton('install spies', () => {
 
 });
 
-/*** pure JavaScript section (in the webbrowser console, you have to replace log(...) with console.log(...) or something similar... )****/
+/*** pure JavaScript section (in the webbrowser console, you have to replace log(...) with console.log(...) or something similar... ) ***/
 
 // simply monkypatching, simple spying
 function simplySpy(object, method) {
